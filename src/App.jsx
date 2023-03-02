@@ -63,7 +63,7 @@ function App() {
 
   function resetCards() {
     const shuffled = [...items, ...items]
-      .sort(() => Math.random() - 1)
+      .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, key: Math.random() }));
     setCards(shuffled);
   }
